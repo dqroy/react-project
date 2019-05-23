@@ -5,7 +5,9 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  /* display: -ms-grid; */
   display: grid;
+  /* -ms-grid--rows: 1fr 1fr; */
   grid-template-rows: 1fr 1fr;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }

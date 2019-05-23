@@ -97,15 +97,19 @@ a {
 }
 
 .Hero .Logos {
+  /* display: -ms-grid; */
   display: grid;
+  /* -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 40px;
   margin: 100px 0;
+  flex-direction: column;
   justify-items: center;
 }
 
 @media (max-width: 640px) {
   .Hero .Logos {
+    /* -ms-grid-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -121,7 +125,9 @@ a {
 
 .CardGroup {
   margin: 50px 40px 100px;
+  /* display: -ms-grid; */
   display: grid;
+  /* -ms-grid-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   justify-items: center;
@@ -129,12 +135,14 @@ a {
 
 @media (max-width: 1060px) {
   .CardGroup {
+    /* -ms-grid-columns: 1fr 1fr; */
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 720px) {
   .CardGroup {
+    /* -ms-grid-columns: 1fr; */
     grid-template-columns: repeat(1, 1fr);
   }
 }
